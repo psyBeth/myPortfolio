@@ -1,3 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: __inter_Fallback_20b187,ui-sans-serif,system-ui,-apple-system,"system-ui",Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji"
+}
+/* *::selection {
+    color: var(--black-color);
+    background-color: #40cf8e
+} */
 .nav {
     position: fixed;
     top: 0;
@@ -25,9 +35,11 @@
     padding: 10px;
     border-radius: 18px;
 }
-/* .bg-video{ */
-
-    /* background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, from(rgba(0,0,0,0.8)), to(rgba(0,0,0,0)));
+/* .bg-video{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    z-index: 3;.
 } */
 video{
     z-index: 3;
@@ -43,12 +55,14 @@ video{
 .insa {
     z-index: 1;
     position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
     text-align: center;
-    /* top: 10px; 
-    left: 20px; */
-    margin-left: 10%;
+    align-items: center;
+    
  
 }
 .insa-wrapper{
@@ -58,8 +72,6 @@ video{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin-top: 20%;
-
 }
 .insa-wrapper-title{
     display: flex;
@@ -70,6 +82,11 @@ video{
     color:  rgb(255,105,180);
 
 }
+.insa-wrapper-description{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 /* .gradient{
     width: 100vh;
     height: 100vh;
@@ -77,4 +94,5 @@ video{
 } */
 body{
     background-color: black;
+
 }
